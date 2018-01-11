@@ -31,6 +31,9 @@ a:hover {
   text-decoration:underline;
 }
 
+#titlez a:hover {
+}
+
 box {
     background-color: white;
     width: 300px;
@@ -55,6 +58,7 @@ box {
     width:1000px;
     text-align:center;
     margin-top:-20px;
+    padding-top:20px;
     background-color:white;
     z-index:999;
 }
