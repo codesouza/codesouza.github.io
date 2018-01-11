@@ -57,8 +57,7 @@ box {
     outline-width: 1px;
     width:1000px;
     text-align:center;
-    margin-top:-20px;
-    padding-top:20px;
+    margin-top:0px;
     background-color:white;
     z-index:999;
 }
