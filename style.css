@@ -185,7 +185,7 @@ a .socialmedia{
 }
 
 
-#thing2:active #about2 {
+#thing2:active #about3 {
     opacity:1;
     transition: opacity .3s ease-in-out;
    -moz-transition: opacity .3s ease-in-out;
