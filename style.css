@@ -184,3 +184,12 @@ a .socialmedia{
    -ms-transition: opacity .25s ease-in-out;
 }
 
+
+#thing2:active #about2 {
+    opacity:1;
+    transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
