@@ -142,11 +142,11 @@ a .socialmedia{
 }
 
 #about {
-    width:340px;
+    width:315px;
     padding:0; 
     height:272px;
     margin-top:0px;
-    text-align:left;
+    text-align:justify;
     position:absolute;
     margin-left:501px;
     /*left:60%;
@@ -165,7 +165,7 @@ a .socialmedia{
     padding:0; 
     height:272px;
     margin-top:0px;
-    text-align:left;
+    text-align:justify;
     position:absolute;
     margin-left:320px;
     margin-top:-300px;
