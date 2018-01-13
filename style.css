@@ -1,4 +1,11 @@
-
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  
+  
 body {
   background-color: white;
   color: black;
@@ -122,6 +129,26 @@ a .socialmedia{
     border-right: 2px solid lightgray;
 }
 
+.section1 {
+    width:606px;
+    padding:0; 
+    height:300px;
+    margin-top:-40px;
+    margin-left:30px;
+    text-align:middle;
+    overflow:scroll;
+    border-right: 2px solid lightgray;
+}
+
+.section1:hover #about3 {
+    opacity:1;
+    transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
+
 #about {
     width:340px;
     padding:0; 
@@ -140,6 +167,27 @@ a .socialmedia{
    -webkit-transition: opacity .3s ease-in-out;
    -ms-transition: opacity .3s ease-in-out;
 }
+
+#about3 {
+    width:340px;
+    padding:0; 
+    height:272px;
+    margin-top:0px;
+    text-align:left;
+    position:absolute;
+    margin-left:320px;
+    margin-top:-300px;
+    /*left:60%;
+    right:39%;*/
+    font-size:19px;
+    opacity:0;
+    transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
+
 
 #about2 {
     width:630px;
