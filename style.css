@@ -1,17 +1,31 @@
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  
+  
 body {
-  background-color: white;
   color: black;
   font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight:300;
   margin:15px;
-  background:url();
-  background-size:20% 40%;
+  opacity: 1;
+  transition: 1s opacity;
+  background:url(https://cdn.pixabay.com/photo/2016/08/20/04/43/pineapple-1606852_960_720.jpg);
+  background-size:auto 105%;
+  background-position:center bottom;
   background-attachment: fixed;
-  
+  background-repeat:no-repeat;
+  background-color:#e8dedd;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 a {
-  background-color: #FFFF61;
   color: black;
   font-family: Helvetica;
   background-size:auto auto;
@@ -21,7 +35,6 @@ a {
 }
 
 a:hover {
-  background-color: #FFFFFF;
   color: black;
   font-family: Helvetica;
   background-size:auto auto;
@@ -55,10 +68,28 @@ box {
     outline-color: lightgray;
     outline-width: 1px;
     width:1000px;
+    height:400px;
+    position:absolute center;
     text-align:center;
     margin-top:-20px;
-    background-color:white;
+    background-color:#FFFFFFA6;
     z-index:999;
+}
+
+.one:hover {
+    outline-style: double;
+    outline-color: lightgray;
+    outline-width: 1px;
+    width:1000px;
+    text-align:center;
+    margin-top:-20px;
+    background-color:#FFFFFF;
+    z-index:999;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    -moz-transition-duration: 0.5s; /* Safari */
+    -o-transition-duration: 0.5s; /* Safari */
+    -ms-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
 }
 .initial{
   z-index:-10000;
@@ -73,8 +104,6 @@ box {
   position: fixed;
   bottom:5px;
   right:5px;
-  background-color:white;
-  color:white;
 }
 
 a .socialmedia{
@@ -161,11 +190,11 @@ a .socialmedia{
 }
 
 #about3 {
-    width:315px;
+    width:340px;
     padding:0; 
     height:272px;
     margin-top:0px;
-    text-align:justify;
+    text-align:left;
     position:absolute;
     margin-left:320px;
     margin-top:-300px;
@@ -180,7 +209,23 @@ a .socialmedia{
    -ms-transition: opacity .3s ease-in-out;
 }
 
+.fadey {
+    opacity:0.8;
+        transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
 
+.fadey:hover{
+    opacity:1;
+        transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
 #about2 {
     width:630px;
     padding:0; 
@@ -232,4 +277,47 @@ a .socialmedia{
    -o-transition: opacity .3s ease-in-out;
    -webkit-transition: opacity .3s ease-in-out;
    -ms-transition: opacity .3s ease-in-out;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:#D1B2B2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: opacity .2s ease-in-out;
+   -moz-transition: background-color .2s ease-in-out;
+   -o-transition: background-color .2s ease-in-out;
+   -webkit-transition: background-color .2s ease-in-out;
+   -ms-transition: background-color .2s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color:#A67979;
+    background-color: opacity .2s ease-in-out;
+   -moz-transition: background-color .2s ease-in-out;
+   -o-transition: background-color .2s ease-in-out;
+   -webkit-transition: background-color .2s ease-in-out;
+   -ms-transition: background-color .2s ease-in-out;
+}
+
+.containery {
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-right:30px;
+    margin-left:30px;
+    height:335px;
+    overflow:scroll;
 }
