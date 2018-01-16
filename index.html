@@ -11,98 +11,490 @@
 <meta name="msapplication-TileImage" content="/codefavicon.png">
 <link rel="icon" href="/icon2.png">
 <link rel="shortcut icon" type="image/png" href="/codefavicon.png">
- <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(function(){
+    $("featured").hide();
+    $("aboutzz").hide();
+    $("contact").hide();
+    $("faq").hide();
+    $("games").hide();
+    $("linkfeatured").click(function(){
+        $("games").hide();
+        $("contact").hide();
+        $("aboutzz").hide();
+        $("faq").hide();
+        $("featured").fadeIn("slow");
+</script>
+<script>
+$(function(){
+    $("featured").hide();
+    $("aboutzz").hide();
+    $("contact").hide();
+    $("faq").hide();
+    $("linkfeatured").click(function(){
+        $("games").hide();
+        $("contact").hide();
+        $("aboutzz").hide();
+        $("faq").hide();
+        $("featured").fadeIn("slow");
+});
+});
+$(function(){
+    $("featured").hide();
+    $("aboutzz").hide();
+    $("contact").hide();
+    $("faq").hide();
+    $("linkabout").click(function(){
+        $("games").hide();
+        $("contact").hide();
+        $("featured").hide();
+        $("faq").hide();
+        $("aboutzz").fadeIn("slow");
+});
+});
+$(function(){
+    $("featured").hide();
+    $("aboutzz").hide();
+    $("contact").hide();
+    $("faq").hide();
+    $("linkgames").click(function(){
+        $("contact").hide();
+        $("featured").hide();
+        $("aboutzz").hide();
+        $("faq").hide();
+        $("games").fadeIn("slow");
+});
+});
+$(function(){
+    $("featured").hide();
+    $("aboutzz").hide();
+    $("contact").hide();
+    $("faq").hide();
+    $("linkcontact").click(function(){
+        $("games").hide();
+        $("featured").hide();
+        $("aboutzz").hide();
+        $("faq").hide();
+        $("contact").fadeIn("slow");
+});
+});
+$(function(){
+    $("featured").hide();
+    $("aboutzz").hide();
+    $("contact").hide();
+    $("faq").hide();
+    $("linkfaq").click(function(){
+        $("games").hide();
+        $("featured").hide();
+        $("aboutzz").hide();
+        $("contact").hide();
+        $("faq").fadeIn("slow");
+});
+});
+  </script>
+
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 100%;
       margin: auto;
   }
- </style>
-  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-</head>
-<body>
   
-    <br><br><center><a href="http://codesouza.github.io/" class="titlez" style="font-family:courier new;color:black;background-color:none;background:none;font-size:65px;text-decoration:none;">codesouza</a><p style="margin-top:-10px;">&#9825;
+  
+body {
+  color: black;
+  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight:300;
+  margin:15px;
+  opacity: 1;
+  transition: 1s opacity;
+  background:url(https://cdn.pixabay.com/photo/2016/08/20/04/43/pineapple-1606852_960_720.jpg);
+  background-size:auto 105%;
+  background-position:center bottom;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-color:#e8dedd;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+a {
+  color: black;
+  font-family: Helvetica;
+  background-size:auto auto;
+  background-attachment: fixed;
+  font-style:normal;
+  text-transform:none;
+}
+
+a:hover {
+  color: black;
+  font-family: Helvetica;
+  background-size:auto auto;
+  background-attachment: fixed;
+  font-style:normal;
+  text-decoration:underline;
+}
+
+#titlez a:hover {
+}
+
+box {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border: 1px solid gray;
+    margin-left: 250px;
+}
+
+.vr{
+  width: 2px; /* Line width */
+  background-color: lightgray; /* Line color */
+  height: 268px; /* Override in-line if you want specific height. */
+  display:inline-block; /* Causes the line to float to left of content. 
+    You can instead use position:absolute or display:inline-block
+    if this fits better with your design */
+}
+
+.one {
+    outline-style: double;
+    outline-color: lightgray;
+    outline-width: 1px;
+    width:1000px;
+    height:400px;
+    position:absolute center;
+    text-align:center;
+    margin-top:-20px;
+    background-color:#FFFFFFA6;
+    z-index:999;
+}
+
+.one:hover {
+    outline-style: double;
+    outline-color: lightgray;
+    outline-width: 1px;
+    width:1000px;
+    text-align:center;
+    margin-top:-20px;
+    background-color:#FFFFFF;
+    z-index:999;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    -moz-transition-duration: 0.5s; /* Safari */
+    -o-transition-duration: 0.5s; /* Safari */
+    -ms-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+.initial{
+  z-index:-10000;
+}
+
+
+.mainlink:hover {
+  font-style:italic;
+}
+
+.socialmedia {
+  position: fixed;
+  bottom:5px;
+  right:5px;
+}
+
+a .socialmedia{
+  position: fixed;
+  bottom:5px;
+  right:5px;
+  color:white;
+}
+
+.button {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    height:500px;
+    width:150px;
+    text-align:center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    -moz-transition-duration: 0.4s; /* Safari */
+    -o-transition-duration: 0.4s; /* Safari */
+    -ms-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.section {
+    width:606px;
+    padding:0; 
+    height:300px;
+    margin-top:-40px;
+    margin-left:30px;
+    text-align:middle;
+    overflow:scroll;
+    border-right: 2px solid lightgray;
+}
+
+.section1 {
+    width:606px;
+    padding:0; 
+    height:300px;
+    margin-top:-40px;
+    margin-left:30px;
+    text-align:middle;
+    overflow:scroll;
+    border-right: 2px solid lightgray;
+}
+
+.section1:hover #about3 {
+    opacity:1;
+    transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
+
+#about {
+    width:315px;
+    padding:0; 
+    height:272px;
+    margin-top:0px;
+    text-align:justify;
+    position:absolute;
+    margin-left:501px;
+    /*left:60%;
+    right:39%;*/
+    font-size:19px;
+    opacity:0;
+    transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
+
+#about3 {
+    width:340px;
+    padding:0; 
+    height:272px;
+    margin-top:0px;
+    text-align:left;
+    position:absolute;
+    margin-left:320px;
+    margin-top:-300px;
+    /*left:60%;
+    right:39%;*/
+    font-size:19px;
+    opacity:0;
+    transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
+
+.fadey {
+    opacity:0.8;
+        transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
+
+.fadey:hover{
+    opacity:1;
+        transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
+#about2 {
+    width:630px;
+    padding:0; 
+    height:272px;
+    margin-top:0px;
+    text-align:justify;
+    position:absolute;
+    margin-left:521px;
+    /*left:60%;
+    right:39%;*/
+    font-size:18px;
+}
+
+
+#thing:hover #about {
+    opacity:1;
+    transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
+
+#thing a:link {
+  opacity:0.7;
+  text-decoration:none;
+  background:none;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   -o-transition: opacity .25s ease-in-out;
+   -ms-transition: opacity .25s ease-in-out;
+}
+
+#thing a:hover {
+  opacity:1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   -o-transition: opacity .25s ease-in-out;
+   -ms-transition: opacity .25s ease-in-out;
+}
+
+
+#thing2:active #about3 {
+    opacity:1;
+    transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -o-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   -ms-transition: opacity .3s ease-in-out;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:#D1B2B2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: opacity .2s ease-in-out;
+   -moz-transition: background-color .2s ease-in-out;
+   -o-transition: background-color .2s ease-in-out;
+   -webkit-transition: background-color .2s ease-in-out;
+   -ms-transition: background-color .2s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color:#A67979;
+    background-color: opacity .2s ease-in-out;
+   -moz-transition: background-color .2s ease-in-out;
+   -o-transition: background-color .2s ease-in-out;
+   -webkit-transition: background-color .2s ease-in-out;
+   -ms-transition: background-color .2s ease-in-out;
+}
+
+.containery {
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-right:30px;
+    margin-left:30px;
+    height:335px;
+    overflow:scroll;
+}
+  </style>
+  
+</head><body style="background-color:#  background-color:#e8dedd;">
+
+    <br><br><center><a href="http://codesouza.github.io/" class="titlez" style="font-family:courier new;color:black;font-size:65px;text-decoration:none;">titleish</a><p style="margin-top:-10px;width:350px;">&#9825;
     
-    <a href="#featured" style="background-color:none;background:none;text-decoration:none;"><span class="mainlink">featured</span></a> // 
-    <a href="#allgames" style="background-color:none;background:none;text-decoration:none;"><span class="mainlink">games</span></a> // 
-    <a href="#abt" style="background-color:none;background:none;text-decoration:none;"><span class="mainlink">about</span></a> // 
-    <a href="#contact" style="background-color:none;background:none;text-decoration:none;"><span class="mainlink">contact</span></a> //
-    <a href="#faq" style="background-color:none;background:none;text-decoration:none;"><span class="mainlink">faq</span></a>  &#9825;</center><br>
+    <linkgames><a href="#" style="text-decoration:none;" class="mainlink">games</a></linkgames> // 
+    <linkfeatured><a href="#" style="text-decoration:none;" class="mainlink">featured</a></linkfeatured> //
+    <linkabout><a href="#" style="text-decoration:none;" class="mainlink">about</a></linkabout> // 
+    <linkcontact><a href="#" style="text-decoration:none;" class="mainlink">contact</a></linkcontact> //
+    <linkfaq><a href="#" style="text-decoration:none;" class="mainlink">faq</a></linkfaq>  &#9825;</center><br>
 
-<a name="featured"></a>
-<br>
-&nbsp; 
-
-<center><div class="one">
-<p style="text-align:left;font-size:18px;padding:32px;">#FEATURED<br>
-<div class=section1>
-<div class="container" style="width:530px;margin-right:60px;">
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1750" style="width:530px;height:295px;">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-       <span id="thing2"><a href="/wip"><img src="http://78.media.tumblr.com/12917b4e95c2bfa5ded5bbecb8294c77/tumblr_obpsepjNXy1vr19qqo1_1280.jpg" height=295px width=530px></a></span>
-      </div>
-
-      <div class="item">
-       <span id="thing2"><a href="/wip"><img src="http://78.media.tumblr.com/a0939ae14921f3d64fb581b9fb13c5de/tumblr_obpkhfgnyP1vr19qqo1_1280.jpg" height=295px width=530px></a></span>
-      </div>
-    
-      <div class="item">
-       <span id="thing2"><a href="/wip"><img src="https://codesouza.github.io/test.png" height=295px width=530px></a></span>
-     </div>
-     
-      <div class="item">
-        <span id="thing2"><img src="http://78.media.tumblr.com/141790d12981d363426460a32bfb8c0c/tumblr_obpjwsksVC1vr19qqo3_1280.jpg" height=295px width=530px></span>
-      </div>
-      
-          <div class="item">
-        <span id="thing2"><img src="http://78.media.tumblr.com/fda3e1c578d5d9608e2ddd19bd14b0ad/tumblr_o5e16iesNR1vr19qqo2_1280.jpg" height=295px width=530px></span>
-     </div>
-     
-    </div>
-
-    <!-- Left and right controls -->
-     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="background:none">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="background:none">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-<span id="about3">
-<strong><i>woruworu</strong></i><br>
-<small><small><em>thisisn't actually the featured game,im jsuttesting thisngs a small boy lost in a big world <strike>er, commercial mall</strike>. can you successfully guide 6y/o noodle to his mother? developed as a means to play around with new code.</em><br>
-</div><br>
-</div>
-</center>
-<br>
-<a name="allgames"></a>
+  <script>document.body.className += ' fade-out';
+      $(function() {
+    $('body').removeClass('fade-out');
+});
+  </script>
+  
 <br>
 &nbsp;
+<center>
+<featured>
+<div class="one">
+<p style="text-align:left;font-size:18px;padding:30px;">#FEATURED<br>
+<img src="/test.png" height=30% width=auto style="margin-top:10px;padding:5px;border:1px solid lightgray;">
+<span id="about2" style="padding:15px;margin-left:0px;">
+  blalbalbalballablabla
+</div>
+</div>
+</featured>
 
-<center><div class="one">
+<aboutzz>
+<div class="one">
+<p style="text-align:left;font-size:18px;padding:30px;">#YAHOO<br>
+<img src="https://78.media.tumblr.com/1cd457d7540e53be6df5ed3f36c5267b/tumblr_p2kfv2hyrZ1vpi7zio1_1280.jpg" height=300px width=auto style="margin-top:10px;margin-left:30px;padding:5px;border:1px solid lightgray;background:#FFF;" class="fadey">
+<span id="about2" style="padding:15px;margin-left:0px;">
+  ...we are not exactly sure what this is either.
+</div>
+</div>
+</aboutzz>
+
+
+<contact>
+<div class="one">
+<p style="text-align:left;font-size:18px;padding-top:30px;padding-left:30px;padding-right:30px;">#CONTACT<br>
+<div class="containery">
+<form method="post" action="send_message.php">
+    <input type="text" id="fname" name="namez" placeholder="Name & E-mail (OPTIONAL - only if you want a reply!)">
+
+    <textarea id="subject" name="subjectz" placeholder="If you have any comments, feedbacks, questions, epiphanies, or life stories to share, kindly submit them here! ;- )" style="height:180px;overflow:scroll;"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+</div>
+</contact>
+
+<faq>
+<div class="one">
+<p style="text-align:left;font-size:18px;padding:30px;">#(IN)FREQUENTLY ASKED QUESTIONS<br>
+<img src="/test.png" height=30% width=auto style="margin-top:10px;padding:5px;border:1px solid lightgray;">
+<span id="about2" style="padding:15px;margin-left:0px;">
+  blalbalbalballablabla
+</div>
+</div>
+</faq>
+
+<games>
+<div class="one">
 <p style="text-align:left;font-size:18px;padding:30px;">#GAMES<br>
 <div class=section style="height:315px;">
 
-<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/51420f6b9ac7511cdd7868e2d6248a3f/tumblr_p2h3wk4jT21vpi7zio5_500.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/51420f6b9ac7511cdd7868e2d6248a3f/tumblr_p2h3wk4jT21vpi7zio5_500.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
 <span id="about" style="margin-left:485px;">
 <strong><i>chicken alfredo</strong></i><br>
 <small><small><em>a simple pseudo-RPG featuring a small boy lost in a big world <strike>er, commercial mall</strike>. can you successfully guide 6y/o noodle to his mother? developed as a means to play around with new code.</em><br>
@@ -112,24 +504,24 @@
 <strong>length:</strong> 10-15min<br>
 <strong>originally created:</strong> oct2015<br>
 <strong>last updated:</strong> jan2018<br>
-<strong>warnings:</strong> n/a<br></small>
+<strong>warnings:</strong> kinda boring<br></small>
 <center><strong>* * *</strong></center></small>
 
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/8546963a7205b519762d2fd50eac9c80/tumblr_p2h3wk4jT21vpi7zio1_500.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-left:380px;">
+<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/8546963a7205b519762d2fd50eac9c80/tumblr_p2h3wk4jT21vpi7zio1_500.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-left:377px;">
 <strong><i>teh gr8st meme</strong></i><br>
 <small><small><em>a text-adventure game featuring swaggerjagger – a highschool student determined to win the superlative of “greatest meme.” as part of his quest, he must defeat all other memes within the school.</em><br><br>
 <strong>genre:</strong> pointless<br>
 <strong>length:</strong> 10-15min<br>
 <strong>last updated:</strong> oct2015<br>
-<strong>warnings:</strong> outdated memez<br></small>
+<strong>warnings:</strong> outdated memes<br><br></small>
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/a231ae57bc770aa4e705761f517f2b4b/tumblr_p2h3wk4jT21vpi7zio4_500.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-left:275px;">
+<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/a231ae57bc770aa4e705761f517f2b4b/tumblr_p2h3wk4jT21vpi7zio4_500.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-left:269px;">
 <strong><i>blablabla</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
@@ -139,9 +531,9 @@
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/7ba85b53e247035cbcf5eed28ad32768/tumblr_p2h3wk4jT21vpi7zio3_500.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-left:170px;">
-<strong><i>blablabla</strong></i><br>
+<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/7ba85b53e247035cbcf5eed28ad32768/tumblr_p2h3wk4jT21vpi7zio3_500.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-left:161px;">
+<strong><i>artificial compliments</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
 <strong>length:</strong> text<br>
@@ -150,8 +542,8 @@
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-left:65px;">
+<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-left:53px;">
 <strong><i>blablabla</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
@@ -161,8 +553,19 @@
 <center><strong>* * *</strong></center></small>
 </span></span> 
 
-<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/5c56c595bf314876842eba7ab51372b2/tumblr_p2h3wk4jT21vpi7zio2_500.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-top:-105px;margin-left:485px;">
+<span id="thing"><a href=http://rebot.me/homeslice><img src="https://78.media.tumblr.com/5c56c595bf314876842eba7ab51372b2/tumblr_p2h3wk4jT21vpi7zio2_500.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-top:-104px;margin-left:485px;">
+<strong><i>rebot.me/homeslice</strong></i><br>
+<small><small><em>a chatbot by the name of nikita2.0 whose sole purpose appears to be insulting others. filled with 12 y/o humor and outdated memes, nikita2.0 was created as a short-lived inside joke...</em><br><br>
+<strong>genre:</strong> chatbot<br>
+<strong>length:</strong> up to you!<br>
+<strong>originally created:</strong> 2015(?)<br>
+<strong>warnings:</strong> not fun or funny<br><br></small>
+<center><strong>* * *</strong></center></small>
+</span></span>
+
+<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/7aa47f646c2543e2e0742189bee8ec03/tumblr_p2h3wk4jT21vpi7zio7_r1_500.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-top:-104px;margin-left:377px">
 <strong><i>blablabla</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
@@ -172,8 +575,8 @@
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/7aa47f646c2543e2e0742189bee8ec03/tumblr_p2h3wk4jT21vpi7zio7_r1_500.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-top:-105px;margin-left:380px">
+<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/6495e687cec66d059bb4564ab6f2af55/tumblr_p2h3wk4jT21vpi7zio8_r1_500.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-top:-104px;margin-left:269px;">
 <strong><i>blablabla</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
@@ -183,8 +586,8 @@
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/6495e687cec66d059bb4564ab6f2af55/tumblr_p2h3wk4jT21vpi7zio8_r1_500.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-top:-105px;margin-left:275px;">
+<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/abcad7ddb61fff23e1674c939392bfc5/tumblr_p2h3wk4jT21vpi7zio6_1280.gif" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-top:-104px;margin-left:161px;">
 <strong><i>blablabla</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
@@ -194,8 +597,8 @@
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/abcad7ddb61fff23e1674c939392bfc5/tumblr_p2h3wk4jT21vpi7zio6_1280.gif" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-top:-105px;margin-left:170px;">
+<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-top:-104px;margin-left:53px;">
 <strong><i>blablabla</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
@@ -205,8 +608,8 @@
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-top:-105px;margin-left:65px;">
+<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-top:-208px;margin-left:485px;">
 <strong><i>blablabla</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
@@ -216,8 +619,8 @@
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-top:-210px;margin-left:485px;">
+<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-top:-208px;margin-left:377px;">
 <strong><i>blablabla</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
@@ -227,8 +630,8 @@
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-top:-210px;margin-left:380px;">
+<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-top:-208px;margin-left:269px;">
 <strong><i>blablabla</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
@@ -238,8 +641,8 @@
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-top:-210px;margin-left:275px;">
+<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-top:-208px;margin-left:161px;">
 <strong><i>blablabla</strong></i><br>
 <small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
 <strong>genre:</strong> text<br>
@@ -249,51 +652,16 @@
 <center><strong>* * *</strong></center></small>
 </span></span>
 
-<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-top:-210px;margin-left:170px;">
-<strong><i>blablabla</strong></i><br>
-<small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
-<strong>genre:</strong> text<br>
-<strong>length:</strong> text<br>
-<strong>last updated:</strong> text<br>
-<strong>warnings:</strong> text<br></small>
-<center><strong>* * *</strong></center></small>
-</span></span>
-
-<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
-<span id="about" style="margin-top:-210px;margin-left:65px;">hover!</span></span>
+<span id="thing"><a href="/wip"><img src="https://codesouza.github.io/icon.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
+<span id="about" style="margin-top:-208px;margin-left:53px;">hover!</span></span>
 
 <span id="thing" style="font-size:1px;">&nbsp; 
-<span id="about" style="margin-top:-210px;margin-left:65px;"><strong><i>codesouza games</strong></i><br>
-<small><small><em>description description description description desription description description description description description description description description description description description description </em><br><br>
+<span id="about" style="margin-top:-208px;margin-left:53px;"><strong><i>codesouza games</strong></i><br>
+<small><small><em>description description description description desription description description description description description description description description description description description description </em>
 </span></span>
-</div><br>
-</div></center>
-<br>
- 
-<a name="abt"></a> &nbsp; 
-<br>
-<center><div class="one">
-<p style="text-align:left;font-size:18px;padding:32px;margin-bottom:15px;">#YAHOO<br>
-<span id="thing"><img src="/test.png" height=30% width=auto style="margin-top:10px;padding:5px;border:1px solid lightgray;">
-<span id="about2" style="padding:15px;margin-left:0px;">
-  blalbalbalballablabla
-</div>
-<br>
-<a name="contact"></a> &nbsp; 
-<br>
-<center><div class="one">
-<p style="text-align:left;font-size:18px;padding:32px;">#HMU<br>embed google form!!! / get updates / send feedback</br><p style="text-align:left;padding-left:30px;margin-top:-40px;"><iframe src="https://docs.google.com/forms/d/1LzwYeLHEktfcRdA-hWhYUY2slffqYl0IQMrAqqK3-rg/viewform?embedded=true" width="900" height="300px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe><br><br><br></p>
-</div></center>
- 
-<br>
-<a name="faq"></a> &nbsp;
-<br>
-
-<center><div class="one">
-<p style="text-align:left;font-size:18px;padding:30px;">#(IN)FREQUENTLY ASKED QUESTIONS<br style="font-size:14px;"><center><big><big><big><big><big><big><big><big><big>	&mdash;	&mdash;	&mdash; COMING SOON 	&mdash;	&mdash;	&mdash;</big></big></big></big></big></big></big></big></big><br><small>(jk it'll probs take forever)</small></center><br><br><br><br><br></p>
-</div></center>
-<br><p>
-  <center><a href="#top" style="background-color:none;background:none;text-decoration:none;font-size:14px;" id="scroll" class="scroll">&#x2191;<br>back to top</a></center>
+</div></div></div></div>
+</games>
+</center>
   </body>
+<div class="socialmedia"><a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ><img src=https://78.media.tumblr.com/a2948956806e05a72e91291b0e32d22c/tumblr_inline_p2kkkcryue1r293s8_250.png style="width:150px;"></a></div> 
 </html>
