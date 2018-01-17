@@ -15,25 +15,22 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script type="text/javascript">var submitted=false;</script>
 
 <script>
 $(function(){
-    $("featured").hide();
-    $("aboutzz").hide();
-    $("contact").hide();
-    $("faq").hide();
-    $("games").hide();
-    $("linkfeatured").click(function(){
-        $("games").hide();
-        $("contact").hide();
-        $("aboutzz").hide();
-        $("faq").hide();
-        $("featured").fadeIn("slow");
+    $("submitzz").hide();
+    $("#linksubmit").click(function(){
+        $("formzz").hide();
+        $("submitzz").show();
+});
+});
 </script>
 <script>
 $(function(){
     $("featured").hide();
     $("aboutzz").hide();
+    $("submitzz").hide();
     $("contact").hide();
     $("faq").hide();
     $("linkfeatured").click(function(){
@@ -47,6 +44,7 @@ $(function(){
 $(function(){
     $("featured").hide();
     $("aboutzz").hide();
+    $("submitzz").hide();
     $("contact").hide();
     $("faq").hide();
     $("linkabout").click(function(){
@@ -61,6 +59,7 @@ $(function(){
     $("featured").hide();
     $("aboutzz").hide();
     $("contact").hide();
+    $("submitzz").hide();
     $("faq").hide();
     $("linkgames").click(function(){
         $("contact").hide();
@@ -73,6 +72,7 @@ $(function(){
 $(function(){
     $("featured").hide();
     $("aboutzz").hide();
+    $("submitzz").hide();
     $("contact").hide();
     $("faq").hide();
     $("linkcontact").click(function(){
@@ -86,6 +86,7 @@ $(function(){
 $(function(){
     $("featured").hide();
     $("aboutzz").hide();
+    $("submitzz").hide();
     $("contact").hide();
     $("faq").hide();
     $("linkfaq").click(function(){
@@ -412,6 +413,35 @@ input[type=submit]:hover {
    -ms-transition: background-color .2s ease-in-out;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height:5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none; 
+    opacity:0;
+}
+
+::-webkit-scrollbar-track-piece {
+    background:none;
+}
+
+::-webkit-scrollbar-corner {
+    background:none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #A67979; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 .containery {
     border-radius: 5px;
     padding-left: 20px;
@@ -419,7 +449,7 @@ input[type=submit]:hover {
     padding-bottom: 20px;
     margin-right:30px;
     margin-left:30px;
-    height:335px;
+    height:338px;
     overflow:scroll;
 }
   </style>
@@ -468,12 +498,19 @@ input[type=submit]:hover {
 <div class="one">
 <p style="text-align:left;font-size:18px;padding-top:30px;padding-left:30px;padding-right:30px;">#CONTACT<br>
 <div class="containery">
-<form method="post" action="send_message.php">
-    <input type="text" id="fname" name="namez" placeholder="Name & E-mail (OPTIONAL - only if you want a reply!)">
+ <script type="text/javascript">var submitted=false;</script>
+ <formzz><iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('formzz').hide(),{ $('submitzz').show();}"></iframe>
+ <form action="https://docs.google.com/forms/d/e/1FAIpQLSfFy_Eoe5OdIp-XxBXdVabRIDv_iaR-ozRfY8hOPy1ni7wybw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
-    <textarea id="subject" name="subjectz" placeholder="If you have any comments, feedbacks, questions, epiphanies, or life stories to share, kindly submit them here! ;- )" style="height:180px;overflow:scroll;"></textarea>
-    <input type="submit" value="Submit">
+    <input type="text" id="fname" name="entry.106979886" placeholder="Name & E-mail (OPTIONAL - only if you want a reply!)">
+
+    <textarea id="subject" name="entry.629536111" placeholder="If you have any comments, feedbacks, questions, epiphanies, or life stories to share, kindly submit them here! ;- )" style="height:170px;overflow:scroll;"></textarea>
+    <linksubmit><input type="submit" value="Submit" id="linksubmit" class="linksubmit"></linksubmit>
   </form>
+</formzz>
+<submitzz>
+<center style="font-size:15px;"><br><br><br><br><br>thank you for your feedback!<br>your submission has been received.<br><br><br></center>
+</submitzz>
 </div>
 </div>
 </div>
@@ -492,7 +529,7 @@ input[type=submit]:hover {
 <games>
 <div class="one">
 <p style="text-align:left;font-size:18px;padding:30px;">#GAMES<br>
-<div class=section style="height:315px;">
+<div class=section style="height:320px;">
 
 <span id="thing"><a href="/wip"><img src="https://78.media.tumblr.com/51420f6b9ac7511cdd7868e2d6248a3f/tumblr_p2h3wk4jT21vpi7zio5_500.png" height=100px width=100px style="padding:5px;background:#FFFFFF;margin-bottom:4px;border:1px solid lightgray;"></a>&nbsp;
 <span id="about" style="margin-left:485px;">
